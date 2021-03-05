@@ -32,8 +32,6 @@ class LoginGUI:
 		self.master_password_label = Label(self.window, text='Password', bg=BG_COLOR, fg=TEXT_COLOR, font=Font(family='Helvetica', size=16)).grid(row=2, column=0, columnspan=2, padx=10, pady=10)
 		self.master_user_entry = Entry(self.window, textvariable=self.master_user, font=Font(family='Helvetica', size=16))
 		self.master_password_entry = Entry(self.window, textvariable=self.master_password, font=Font(family='Helvetica', size=16))
-		self.master_user_entry.insert(0, 'Username')
-		self.master_password_entry.insert(0, 'Password')
 		self.master_user_entry.grid(row=1, column=2, columnspan=2, padx=10, pady=10)
 		self.master_password_entry.grid(row=2, column=2, columnspan=2, padx=10, pady=10)
 		
