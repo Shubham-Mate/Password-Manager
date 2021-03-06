@@ -85,8 +85,8 @@ class LoginGUI:
 		color_scheme = (SUCCESS_BACKGROUND, SUCESS_MSG) if is_success else (ERROR_BACKGROUND, ERROR_MSG)
 
 		# Changes Position of Buttons to show message
-		self.login_btn.grid(row=4, column=0, sticky='ew', padx=10, pady=10)
-		self.register_btn.grid(row=4, column=1, stick='ew', padx=10, pady=10)
+		self.login_btn.grid(row=4, column=0, columnspan=2, sticky='ew', padx=10, pady=10)
+		self.register_btn.grid(row=4, column=2, columnspan=2, stick='ew', padx=10, pady=10)
 
 		# Message
 		self.msg = Label(self.window, text=msg, font=Font(family='Helvetica', size=10), bg=color_scheme[0], fg=color_scheme[1])
